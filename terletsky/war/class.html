@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Hello Lab Engine</title>
+<style>
+    body {
+    background-color: #124312;
+    }
+    .txtW {
+    color: #FFFFFF;
+    }
+    h2 {
+    margin-left: 10%;
+    }
+  .button7 {
+  gravity: center;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.7em 3em;
+  display: block;
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button7:hover { background: rgb(53, 167, 110); }
+a.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}</style>
+  </head>
+    <script src="jquery-2.1.0.min.js"></script>
+ 
+<script>
+ 
+  $( function() {
+    $('#info').click( function() {
+    	var var1 = $('#var1').val();
+    	var var2 = $('#var2').val();
+    	var var3 = $('#var3').val();
+    	var var4 = $('#var4').val();
+    	var var5 = $('4').val();
+    	var operation = $('#operation').val();
+    	
+      $('#result').load( "/Class?var1="+var1+"&var2="+var2+"&var3="+var3+"&var4="+var4+"&var5="+4+"&operation="+operation);
+    } );
+ 
+    
+  } );
+  $( function() {
+	    $('#gruz').click( function() {
+	    	var var1 = $('#var1').val();
+	    	var var2 = $('#var2').val();
+	    	var var3 = $('#var3').val();
+	    	var var4 = $('#var4').val();
+	    	var var5 = $('5').val();
+	    	var operation = $('#operation').val();
+	    	
+	      $('#result').load( "/Class?var1="+var1+"&var2="+var2+"&var3="+var3+"&var4="+var4+"&var5="+5);
+	    } );
+	 
+	    
+	  } );
+ 
+</script>
+
+  <body>
+<p class="txtW">Нажмите ""подрузить" и после этого в списке выберите телефон</p>
+<button id="gruz" class="button7">Подгрузить</button>
+<button id="info" class="button7">Полная инфа</button>
+  <form>
+
+<select id="operation">
+<option value="0">1</option>
+<option value="1">2</option>
+<option value="2">3</option>
+<option value="3">4</option>
+<option value="4">5</option>
+<option value="5">6</option>
+</select>
+
+
+</form> 
+
+
+<p><b><span style="color:white" id="result"></span></b></p>
+  
+	
+
+  </body>
+</html>
