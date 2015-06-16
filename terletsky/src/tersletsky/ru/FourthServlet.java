@@ -87,7 +87,7 @@ public class FourthServlet extends HttpServlet {
 			return;
 		}
 		resp.getWriter().println(
-				"<table border=" + "1" + "bgcolor=" + "#FAC864" + ">");
+				"<table>");
 		resp.getWriter().println("<tr>");
 		int dec = 0;
 		for (long t = ch1; t <= ch2; t++) {

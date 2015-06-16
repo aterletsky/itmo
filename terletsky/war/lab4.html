@@ -2,7 +2,86 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+  <title>Задание 4.1 и 4.2</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style> 
+ @font-face {
+font-family: HelveticaNeue;
+src: url("/HelveticaNeue.otf") format("opentype");
+}
+table {
+width: 100%;
+text-align: center;
+background-color: rgba(239, 240, 241, 0.5);
+-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #000000;"
+}
+input {margin: 0% 0% 0% 20%;
+	text-align: center;
+    width: 20%;
+	background-color: transparent;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 2px solid #b88b58;
+	color: #000000;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 1.2rem;
+	padding: 1.6% 3.1%;
+	text-decoration: none;}
+.chile {
+ background-color: rgba(239, 240, 241, 0.5);
+     height: auto;
+     width: auto;
+     gravity: center;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #ffffff;"
+	}
+	
+	div {
+ background-color: rgba(239, 240, 241, 0.5);
+     height: 340px;
+     width: 40%;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #ffffff;
+	margin-left: 30%;
+	margin-top: 7%;
+	margin-right: 30%;"
+	}
+body {
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 15%, #7db9e8 38%, #7db9e8 58%, #ffbf26 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(15%,#207cca), color-stop(38%,#7db9e8), color-stop(58%,#7db9e8), color-stop(88%,#ffbf26)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffbf26',GradientType=0 ); /* IE6-9 */
+
+
+    }
+      .button7 {
+  width: 20%;
+  gravity: center;
+  font-weight: 700;
+  color: Black;
+  text-decoration: none;
+  padding: 1;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 3px;
+  background: rgb(239, 240, 241));
+  margin-left: 20%;
+  margin-top: 5%;
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+} </style>
 	<script src="jquery-2.1.0.min.js"></script>
     <script>
 		$(document).ready(function(){
@@ -35,36 +114,30 @@
     <title>UP</title> 
   </head>
   <body>
-	<div class="osnov">	
-			<div class="top"></div>
-			<div class="zadanie">
-			<div>
-			<div >
-				<p class="tx" >Задайте диапазон вывода символов</p>
-				<p class="ptx" >(будут выведенны только символы)</p>
-				<hr width=100% size=1px >
-			</div>
-				<input type="text"  style="width:120px" id="ch1">
-				<input type="text"  style="width:120px" id="ch2">
-				<a href="#" class="knopka" id="knop">задать</a>
-				<a href="#" class="knopka" id="knop2">скрыть</a>
-			</div>
-			<div style="padding-top:50px">
-				<p class="ptx" >(кроме символа будут выведены десятичные и <br>шестнадцатиричные формы представления)</p>
-				<hr width=100% size=1px >
-			</div>
-			<div>
-				<input type="text"  style="width:120px" id="ch3">
-				<input type="text"  style="width:120px" id="ch4">
-				<a href="#" class="knopka" id="knop3">задать</a>
-				<a href="#" class="knopka" id="knop4">скрыть</a>
-			</div >
-			<h4>Результат</h4>
+	<div>	
+
+
+			
+				<p style="color:black; font-family: HelveticaNeue; text-align: center;">Задайте диапазон вывода символов</p>
+				<p style="color:black; font-family: HelveticaNeue; text-align: center;">(будут выведенны только символы)</p>
+			
+				<input  id="ch1">
+				<input  id="ch2">
+				<button class="button7" id="knop">Задать</button>
+				<button class="button7" id="knop2">Скрыть</button>
+			
+			
+				<p style="color:black; font-family: HelveticaNeue; text-align: center;">(кроме символа будут выведены десятичные и <br>шестнадцатиричные формы представления)</p>
+			
+			
+				<input type="text" id="ch3">
+				<input type="text" id="ch4">
+				<button class="button7" id="knop3">задать</button>
+				<button class="button7" id="knop4">скрыть</button>
+			<h4 style="color:black; font-family: HelveticaNeue; text-align: center;">Результат</h4>
 			</div> 
-			<div class="otvet" id="otv1">
-			</div>
-			<div class="otvet" style="width: 40%" id="otv2">
-			</div>
+			<p id="otv1"></p>
+			<p id="otv2"></p>
 	 		
    </div> 
 	

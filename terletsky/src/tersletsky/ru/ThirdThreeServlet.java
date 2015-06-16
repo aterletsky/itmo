@@ -15,8 +15,8 @@ public class ThirdThreeServlet extends HttpServlet {
 		int i2 = Integer.parseInt(var2);
 		long t = 1;
 		Random rnd = new Random();
-		resp.getWriter().println(
-				"<table border=" + "1" + "bgcolor=" + "#FAC864" + ">");
+
+		resp.getWriter().println("<table>");
 		resp.getWriter().println("<tr>");
 		int dec = 0;
 		for (t = 1; t <= i1*i2; t++) {

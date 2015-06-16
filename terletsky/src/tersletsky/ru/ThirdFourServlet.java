@@ -19,7 +19,7 @@ public class ThirdFourServlet extends HttpServlet {
 		int maxint = -99;
 		Random rnd = new Random();
 		resp.getWriter().println(
-				"<table border=" + "1" + "bgcolor=" + "#FAC864" + ">");
+				"<table>");
 		resp.getWriter().println("<tr>");
 		int dec = 0;
 		for (t = 1; t <= i1*i2; t++) {

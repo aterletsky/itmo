@@ -8,9 +8,48 @@
 
 <html>
   <head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Hello Lab Engine</title>
+    <title>Задание 3.1</title>
+ <style>
+ 
+ @font-face {
+font-family: HelveticaNeue;
+src: url("/HelveticaNeue.otf") format("opentype");
+}
+    body {
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 15%, #7db9e8 38%, #7db9e8 58%, #ffbf26 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(15%,#207cca), color-stop(38%,#7db9e8), color-stop(58%,#7db9e8), color-stop(88%,#ffbf26)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffbf26',GradientType=0 ); /* IE6-9 */
 
+    }
+    h2 {
+    margin-left: 10%;
+    }
+  .button7 {
+  width: 80%;
+  gravity: center;
+  font-weight: 700;
+  color: Black;
+  text-decoration: none;
+  padding: 0.7em 3em;
+  display: block;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 3px;
+  background: rgb(239, 240, 241));
+  margin: 0 10% 0 10%;
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+
+}</style>
   </head>
     <script src="jquery-2.1.0.min.js"></script>
  
@@ -32,16 +71,46 @@
   <body>
 
 
-  <form>
-<p>Введите два числа и я скажу вам какое ближе к 10:</p>
-<input id="var1" type="text"/>
-<p>X</p>
-<input id="var2" type="text"/>
+  <div style="background-color:rgba(239, 240, 241, 0.5);
+  height: 300px;
+  width: 45%;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #ffffff;
+	margin-left: 30%;
+	margin-top: 12%;">
+	<p style="color: transparent;"> .</p>
+<p style="color:rgb(0,0,0); margin-top: 30px; font-family: 'HelveticaNeue', sans-serif; text-align: center;">Введите два числа и я скажу вам какое ближе к 10:</p>
+<input id="var1" type="text" style="margin: 2% 0% 5% 10%;
+	width: 40%;
+	background-color: transparent;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 2px solid #b88b58;
+	color: #000000;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 1.2rem;
+	padding: 1.6% 3.1%;
+	text-decoration: none;"/>
+<input id="var2" type="text" style="margin: 2% 0% 0% 0%;
+	width: 40%;
+	background-color: transparent;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 2px solid #b88b58;
+	color: #000000;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 1.2rem;
+	padding: 1.6% 3.1%;
+	text-decoration: none;"/>
+<button id="calc" class="button7">Посчитать</button>
 
-</form> 
-<button id="calc">Посчитать</button>
+<p style="color:rgb(0,0,0); font-family: 'HelveticaNeue', sans-serif; text-align: center;">К десяти ближе: <b><span style="color:Black" id="result"></span></b></p>
+</div> 
 
-<p>К десяти ближе: <b><span style="color:red" id="result"></span></b></p>
   
 	
 

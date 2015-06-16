@@ -5,7 +5,7 @@ import java.io.IOException;
 import javax.servlet.http.*;
 
 @SuppressWarnings("serial")
-public class ClassServlet extends HttpServlet {
+public class class1Servlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		String var1 = req.getParameter("var1");
@@ -22,7 +22,7 @@ public class ClassServlet extends HttpServlet {
 		if (var5.equals("5")) {
 		
 		resp.getWriter().println(
-				"<table border=" + "1" + "bgcolor=" + "#FAC864" + ">");
+				"<table>");
 		resp.getWriter().println("<tr>");
 		int dec = 0;
 		for ( long t = 1; t <= 6; t++) {
@@ -35,7 +35,7 @@ public class ClassServlet extends HttpServlet {
 			String ret = "";
 			if (t == 1) {
 			ret = "1. Apple";
-			} else if (t ==2) {
+			} else if (t == 2) {
 				ret = "2. LG";
 			} else if (t == 3) {
 				ret = "3. Meizu";
