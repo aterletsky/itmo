@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Исключения</title>
+ <style> 
+ @font-face {
+font-family: HelveticaNeue;
+src: url("/HelveticaNeue.otf") format("opentype");
+}
+table {
+width: 100%;
+text-align: center;
+background-color: rgba(239, 240, 241, 0.5);
+-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #000000;"
+}
+p {color:black; font-family: HelveticaNeue; text-align: center;
+}
+input {margin: 0% 0% 0% 20%;
+	text-align: center;
+    width: 40%;
+	background-color: transparent;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	border: 2px solid #b88b58;
+	color: #000000;
+	font-family: 'HelveticaNeue', sans-serif;
+	font-size: 1.2rem;
+	padding: 1.6% 3.1%;
+	text-decoration: none;}
+.chile {
+ background-color: rgba(239, 240, 241, 0.5);
+     height: auto;
+     width: auto;
+     gravity: center;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #ffffff;"
+	}
+	
+	div {
+ background-color: rgba(239, 240, 241, 0.5);
+     height: auto;
+     width: 40%;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #ffffff;
+	margin-left: 30%;
+	margin-top: 10%;
+	margin-right: 30%;"
+	}
+body {
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 15%, #7db9e8 38%, #7db9e8 58%, #ffbf26 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(15%,#207cca), color-stop(38%,#7db9e8), color-stop(58%,#7db9e8), color-stop(88%,#ffbf26)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#207cca 15%,#7db9e8 38%,#7db9e8 58%,#ffbf26 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffbf26',GradientType=0 ); /* IE6-9 */
+
+
+    }
+      button {
+  width: 20%;
+  gravity: center;
+  font-weight: 700;
+  color: Black;
+  text-decoration: none;
+  padding: 1;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 3px;
+  background: rgb(239, 240, 241));
+  margin-left: 0%;
+  margin-top: 2%;
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+} </style>
+  </head>
+ 
+<script src="jquery-2.1.0.min.js"></script>
+<script>
+	$(function() {
+		$('#show1').click(function() {
+			var var1 = $('#var1').val();
+			$('#result1').load("/Exceptions?var1=" + var1 + "&task=" + 1);
+		});
+		$('#show2').click(function() {
+			var var1 = $('#var2').val();
+			$('#result2').load("/Exceptions?var1=" + var1 + "&task=" + 2);
+		});
+		$('#show3').click(function() {
+			var var1 = $('#var3').val();
+			$('#result3').load("/Exceptions?var1=" + var1 + "&task=" + 3);
+		});
+		$('#show4').click(function() {
+			var var1 = $('#var4').val();
+			$('#result4').load("/Exceptions?var1=" + var1 + "&task=" + 4);
+		});
+	});
+</script>
+
+
+<body>
+
+	<div>
+			<p>Проверка на соответствие числу</p>
+			
+				<input id="var1" type="text" />
+			
+			<button id="show1">Готово</button>
+			<p id="result1"></p>
+		
+			<p>Проверка на соответствие дате</p>
+			
+				<input id="var2" type="text" placeholder="dd.mm.yyyy" />
+			
+			<button id="show2">Посчитать</button>
+			<p id="result2"></p>
+			<p>Поиск комбинации цифр в PI</p>
+			
+				<input id="var3" type="text" placeholder="3.141592653589793" />
+			
+			<button id="show3">Показать</button>
+			<p id="result3"></p>
+			<p>Введите капчу</p>
+			
+				<input id="var4" type="text" placeholder="CaPtChA" />
+			
+			<button id="show4">Показать</button>
+			<p id="result4"></p>
+		
+	</div>
+
+</body>
+</html>

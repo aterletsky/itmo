@@ -1,0 +1,37 @@
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>Обработка исключений</title>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="style.css">
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic-ext'
+	rel='stylesheet' type='text/css'>
+
+    <title>Терлецкий Александр 3157</title>
+    <style>
+    body {
+    background-color: #124312;
+    }
+    h2 {
+    margin-left: 10%;
+    }
+  a.button7 {
+  gravity: center;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.7em 3em;
+  display: block;
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  margin: 3px 10% 0 10%;
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button7:hover { background: rgb(53, 167, 110); }
+a.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}</style>
+</head>
